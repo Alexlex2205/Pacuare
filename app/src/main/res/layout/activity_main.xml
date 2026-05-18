@@ -9,6 +9,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/titulo"
         android:layout_width="185dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/madimione"
@@ -20,5 +21,95 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.341" />
+
+    <TextView
+        android:id="@+id/tit1"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/madimione"
+        android:text="Nombre"
+        android:textColor="#6DBC9F"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tit2"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/madimione"
+        android:text="Contraseña"
+        android:textColor="#6DBC9F"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.623" />
+
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="316dp"
+        android:background="#6DBC9F"
+        android:hint="Floppy...."
+        android:inputType="text"
+        android:textColor="#E5F4E0"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tit1"
+        app:layout_constraintVertical_bias="0.168" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="228dp"
+        android:background="#6DBC9F"
+        android:hint="°°°°°°°°°°°°"
+        android:inputType="text|textPassword"
+        android:textColor="#E5F4E0"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tit2"
+        app:layout_constraintVertical_bias="0.373" />
+
+    <ImageView
+        android:id="@+id/btnlog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintVertical_bias="0.12"
+        app:srcCompat="@drawable/hoja" />
+
+    <TextView
+        android:id="@+id/btnlogtxt"
+        android:layout_width="109dp"
+        android:layout_height="72dp"
+        android:fontFamily="@font/madimione"
+        android:shadowColor="#120A0A"
+        android:text="Iniciar seción"
+        android:textColor="#E5F4E0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.569"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.837" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
