@@ -9,6 +9,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.firebase.firestore.FirebaseFirestore
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         val imglogin = findViewById<ImageView>(R.id.btnlog)
         val txtlogin = findViewById<TextView>(R.id.btnlogtxt)
 
+        val db = FirebaseFirestore.getInstance()
 
     }
 }
